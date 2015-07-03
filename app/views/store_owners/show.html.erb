@@ -1,0 +1,14 @@
+Welcome to our token site
+<!-- ruby solution -->
+<%= link_to "Reset API Token", "/account/token_reset", method: :post %>
+
+<br>
+<div ng-app="AccountApp">
+    <div ng-controller="MainCtrl">
+        {{greeting}}
+        {{current_user.email}}
+    </div>
+</div>
+<br>
+<!-- ng solution -->
+<button ng-click="reset_token()">Hi</button>

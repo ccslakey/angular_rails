@@ -1,0 +1,16 @@
+Welcome! Routes below
+<hr>
+<pre>
+root	     GET  /				sites#home
+new_store    GET  /signup        		store_owners#new
+account      POST /account 			stores_owners#create
+store_owners GET  /account_token_reset  	store_owners#show
+login        GET  /login   		   	sessions#new
+	     POST /login			sessions#create
+<small>account_token_reset</small> POST /account/token_reset   store_owners#token_reset
+
+</pre>
+
+<%= link_to "Logout", logout_path, method: :delete  %>
+
+
