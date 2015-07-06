@@ -23,9 +23,8 @@ module SessionsHelper
 	  end
 	end
 
-	def logout
-		@current_owner = session[:user_id] = nil
-		redirect_to root_path
+	def logout (current_owner)
+		current_owner = session[:user_id] = nil
 	end
 	
 end

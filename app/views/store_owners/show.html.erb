@@ -1,6 +1,7 @@
 Welcome to our token site
 <!-- ruby solution -->
-<%= link_to "Reset API Token", "/account/token_reset", method: :post %>
+<!-- type='button' to get rid of reload?  -->
+<button type="button"><%= link_to "Reset API Token", "/account/token_reset", method: :post %></button>
 
 <br>
 <div ng-app="AccountApp">
@@ -11,4 +12,4 @@ Welcome to our token site
 </div>
 <br>
 <!-- ng solution -->
-<button ng-click="reset_token()">Hi</button>
+<button ng-click="createReceipt()">Create a Receipt</button>
